@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Titillium +Web & display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+    background-color: #dddddd;
+    color: black;
+}
+
+div#interface{
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto; /*cima, esquerda, baixo, direita (centralizando o container) (margin delimita a area externa do objeto)*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); /*Sombrear*/
+    padding: 10px; /*Configura a margem dentro do container*/
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 950px;
+    top: 70px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Esta voltando uma pasta, entrando na pasta imagem e selecionando a imagem/ o proximo comando é paraa não repetir a imagem e depois defini a posição lateral e vertical*/
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo'; 
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sem serifa;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* Formatação do Menu */
+
+nav#menu{
+    display: block; /*fazer com que o bloco flutue pela tela*/
+
+}
+
+nav#menu ul{
+    list-style: none;/*tira as bolinhas da frente*/
+    text-transform: uppercase; /*deixa as letras em maiusculo*/
+    position: absolute; /*posição absoluta é definido indepente do objeto container*/
+    top: -20px;
+    left: 450px;
+}
+
+nav#menu li{
+    display: inline-block; /*faz com que os blocos sejam exibidos na mesma linhas*/
+    background-color: #dddddd;
+    padding: 10px; /* é a margem de dentro do objeto*/
+    margin: 2px; /*o tamanho da margem de fora do objeto*/
+    transition: 1s; /*tempo de transição de cor do botão*/
+}
+
+nav#menu li:hover /* ativar a função do mouse*/{
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none; /*esconder o h1 "menu principal"*/
+}
+
+nav#menu a{
+    color:black; /* cor da letra do botão*/
+    text-decoration: none; /*tira o sublinhado da letra do botão*/
+}
+
+nav#menu a:hover{
+    color: white;
+}
+
+section#corpo {
+    display: block; /*Mostrar como bloco*/
+    width: 520px;
+    float: left; /*flutuar o lado esquerdo*/
+    border-right: 1px solid #606060;
+    padding-right:15px 
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+}  
+
+table#tabelaspec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    font-weight: bolder;
+    text-align: center;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+    display: block;
+    text-align: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+
+
+footer#rodape{
+    clear: both;/* limpar a configuração, mostrando fora da divisão*/
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
